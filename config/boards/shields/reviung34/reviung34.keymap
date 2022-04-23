@@ -33,10 +33,10 @@
 // | G       | X       | J        | K        |   | R         | M         | F       | P       |
 //                     | RET      | NAV(SPC) |   | SYM(BSPC) | CONF(ESC) |
                         bindings = <
-   &kp B      &kp Y      &kp O       &kp U       &kp L         &kp D       &kp W       &kp V
-   &mt LGUI C &mt LALT I &mt LSHFT E &mt LCTRL A &mt RCTRL H   &mt RSHFT T &mt RALT S  &mt RGUI N
-   &kp G      &kp X      &kp J       &kp J       &kp R         &kp M       &kp F       &kp P
-                        &kp RET  &lt NAVFN SPACE &lt SYMNUM BSPC &lt CONFIG ESC
+   &kp B      &kp Y      &kp O       &kp U       &none &none &kp L         &kp D       &kp W       &kp V
+   &mt LGUI C &mt LALT I &mt LSHFT E &mt LCTRL A &none &none &mt RCTRL H   &mt RSHFT T &mt RALT S  &mt RGUI N
+   &kp G      &kp X      &kp J       &kp J       &none &none &kp R         &kp M       &kp F       &kp P
+                        &kp RET  &lt NAVFN SPACE &none &none &lt SYMNUM BSPC &lt CONFIG ESC
                         >;
                 };
 
@@ -47,9 +47,9 @@
 // | =       | ;       | [        | ]        |   | 9         | 0         | Z       | Q       |
 //                     | SAVE     | TAB      |   |           |           |
                         bindings = <
-   &none      &kp GRAVE  &kp BSLH    &kp FSLH    &kp N1        &kp N2      &kp N3      &kp N4
-   &mt LGUI SQT &mt LALT MINUS &mt LSHFT COMMA &mt LCTRL DOT &mt RCTRL N5   &mt RSHFT N6 &mt RALT N7  &mt RGUI N8
-   &kp EQUAL      &kp SEMI      &kp LBKT       &kp RBKT       &kp N9         &kp N0       &kp Z       &kp Q
+   &none      &kp GRAVE  &kp BSLH    &kp FSLH    &none &none &kp N1        &kp N2      &kp N3      &kp N4
+   &mt LGUI SQT &mt LALT MINUS &mt LSHFT COMMA &mt LCTRL DOT &none &none &mt RCTRL N5   &mt RSHFT N6 &mt RALT N7  &mt RGUI N8
+   &kp EQUAL      &kp SEMI      &kp LBKT       &kp RBKT       &none &none &kp N9         &kp N0       &kp Z       &kp Q
                         &save  &kp TAB &trans &none
                         >;
                 };
@@ -61,9 +61,9 @@
 // | HOME       | PGDN       | PGUP        | END        |   | F9         | F10         | F11       | F12       |
 //                     |          |          |   | DEL       |           |
                         bindings = <
-   &none      &none  &none    &none    &kp F1        &kp F2      &kp F3      &kp F4
-   &mt LGUI LEFT &mt LALT DOWN &mt LSHFT UP &mt LCTRL RIGHT &mt RCTRL F5   &mt RSHFT F6 &mt RALT F7  &mt RGUI F8
-   &kp HOME      &kp PG_DN      &kp PG_UP       &kp END       &kp F9         &kp F10       &kp F11       &kp F12
+   &none      &none  &none    &none    &none &none &kp F1        &kp F2      &kp F3      &kp F4
+   &mt LGUI LEFT &mt LALT DOWN &mt LSHFT UP &mt LCTRL RIGHT &none &none &mt RCTRL F5   &mt RSHFT F6 &mt RALT F7  &mt RGUI F8
+   &kp HOME      &kp PG_DN      &kp PG_UP       &kp END       &none &none &kp F9         &kp F10       &kp F11       &kp F12
                         &none  &trans &kp DEL &none
                         >;
                 };
@@ -75,9 +75,9 @@
 // |          |          |          | RGB TOG  |    | BT CLR |     |     | RESET     |
 //                                              |     |     |     |     |     |
                         bindings = <
-   &rgb_ug RGB_BRI &rgb_ug RGB_SAI &rgb_ug RGB_HUI &rgb_ug RGB_EFF &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3  
-   &rgb_ug RGB_BRD &rgb_ug RGB_SAD &rgb_ug RGB_HUD &rgb_ug RGB_EFR &bt BT_SEL 4 &none &none        &none     
-   &none           &none           &none           &rgb_ug RGB_TOG &bt BT_CLR   &none &none        &reset   
+   &rgb_ug RGB_BRI &rgb_ug RGB_SAI &rgb_ug RGB_HUI &rgb_ug RGB_EFF &none &none &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3  
+   &rgb_ug RGB_BRD &rgb_ug RGB_SAD &rgb_ug RGB_HUD &rgb_ug RGB_EFR &none &none &bt BT_SEL 4 &none &none        &none     
+   &none           &none           &none           &rgb_ug RGB_TOG &none &none &bt BT_CLR   &none &none        &reset   
                                                              &trans      &trans               &trans      &trans
                         >;
                 };
