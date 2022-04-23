@@ -14,10 +14,6 @@
 #define NAVFN 2
 #define CONFIG 3
 
-&mt {
-    tapping-term-ms = <145>;
-    flavor = "tap-preferred";
-};
 
 / {    
     macros {
