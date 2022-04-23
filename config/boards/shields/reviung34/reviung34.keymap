@@ -50,7 +50,7 @@
    &none      &kp GRAVE  &kp BSLH    &kp FSLH    &kp N1        &kp N2      &kp N3      &kp N4
    &mt LGUI SQT &mt LALT MINUS &mt LSHFT COMMA &mt LCTRL DOT &mt RCTRL N5   &mt RSHFT N6 &mt RALT N7  &mt RGUI N8
    &kp EQUAL      &kp SEMI      &kp LBKT       &kp RBKT       &kp N9         &kp N0       &kp Z       &kp Q
-                        &save  &TAB &trans &none
+                        &save  &kp TAB &trans &none
                         >;
                 };
                 
