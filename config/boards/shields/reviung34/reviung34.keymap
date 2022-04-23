@@ -18,7 +18,7 @@
 #define CONFIG 3
 
 &mt {
-    tapping-term-ms = <145>;
+    tapping-term-ms = <165>;
 };
 
 / {    
@@ -71,7 +71,7 @@
    &none      &none  &none    &none    &none &none &kp F1        &kp F2      &kp F3      &kp F4
    &mt LGUI LEFT &mt LALT DOWN &mt LSHFT UP &mt LCTRL RIGHT &none &none &mt RCTRL F5   &mt RSHFT F6 &mt RALT F7  &mt RGUI F8
    &kp HOME      &kp PG_DN      &kp PG_UP       &kp END       &none &none &kp F9         &kp F10       &kp F11       &kp F12
-                        &none  &trans &kp DEL &none
+                        &none  &trans &kp DEL &caps_word
                         >;
                 };
                
