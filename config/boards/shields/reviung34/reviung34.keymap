@@ -30,7 +30,7 @@
     behaviors {
         retcaps: ret_and_caps_word {
             compatible = "zmk,behavior-hold-tap";
-            label = "RET_AND_CAPS_WORD"
+            label = "RET_AND_CAPS_WORD";
             #binding-cells = <0>;
             flavor = "balanced";
             tapping-term-ms = <200>;
