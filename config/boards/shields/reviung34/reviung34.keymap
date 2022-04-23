@@ -27,17 +27,6 @@
               bindings =  <&macro_tap &kp ESC &kp COLON &kp W &kp RET>;
             )
     };
-    behaviors {
-        retcaps: ret_and_caps_word {
-            compatible = "zmk,behavior-hold-tap";
-            label = "RET_AND_CAPS_WORD";
-            #binding-cells = <0>;
-            flavor = "balanced";
-            tapping-term-ms = <200>;
-            quick-tap-ms = <200>;
-            bindings = <&macro_tap &caps_word>, <&macro_tap &kp RET>;
-        };
-    };
 
         keymap {
                 compatible = "zmk,keymap";
@@ -52,7 +41,7 @@
    &kp B      &kp Y      &kp O       &kp U       &none &none &kp L         &kp D       &kp W       &kp V
    &mt LGUI C &mt LALT I &mt LSHFT E &mt LCTRL A &none &none &mt RCTRL H   &mt RSHFT T &mt RALT S  &mt RGUI N
    &kp G      &kp X      &kp J       &kp K       &none &none &kp R         &kp M       &kp F       &kp P
-                        &retcaps  &lt NAVFN SPACE  &lt SYMNUM BSPC &lt CONFIG ESC
+                        &kp RET  &lt NAVFN SPACE  &lt SYMNUM BSPC &lt CONFIG ESC
                         >;
                 };
 
@@ -80,7 +69,7 @@
    &none      &none  &none    &none    &none &none &kp F1        &kp F2      &kp F3      &kp F4
    &mt LGUI LEFT &mt LALT DOWN &mt LSHFT UP &mt LCTRL RIGHT &none &none &mt RCTRL F5   &mt RSHFT F6 &mt RALT F7  &mt RGUI F8
    &kp HOME      &kp PG_DN      &kp PG_UP       &kp END       &none &none &kp F9         &kp F10       &kp F11       &kp F12
-                        &none  &trans &kp DEL &none
+                        &none  &trans &kp DEL &caps_word
                         >;
                 };
                
