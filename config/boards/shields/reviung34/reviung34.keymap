@@ -43,7 +43,7 @@
    &kp B      &kp Y      &kp O       &kp U       &none &none &kp L         &kp D       &kp W       &kp V
    &mt LGUI C &mt LALT I &mt LSHFT E &mt LCTRL A &none &none &mt RCTRL H   &mt RSHFT T &mt RALT S  &mt RGUI N
    &kp G      &kp X      &kp J       &kp K       &none &none &kp R         &kp M       &kp F       &kp P
-                        &kp RET  &lt NAVFN SPACE  &lt SYMNUM BSPC &lt CONFIG ESC
+                        &lt NAVFN RET  &mt LSHFT SPACE  &lt SYMNUM BSPC &lt CONFIG ESC
                         >;
                 };
 
