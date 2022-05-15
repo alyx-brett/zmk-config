@@ -26,6 +26,19 @@
             )
     };
 
+    behaviors {
+        hrm: homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;    // <---[[moderate duration]]
+            quick-tap-ms = <100>;
+            flavor = "balanced";
+            bindings = <&kp>, <&kp>;
+            global-quick-tap;
+        };
+    };
+
         keymap {
                 compatible = "zmk,keymap";
 
@@ -37,7 +50,7 @@
 //                     | RET      | NAV(SPC) |   | SYM(BSPC) | CONF(ESC) |
                         bindings = <
    &kp B      &kp Y      &kp O       &kp U       &none &none &kp L         &kp D       &kp W       &kp V
-   &mt LGUI C &mt LALT I &mt LSHFT E &mt LCTRL A &none &none &mt RCTRL H   &mt RSHFT T &mt RALT S  &mt RGUI N
+   &hrm LGUI C &hrm LALT I &hrm LSHFT E &hrm LCTRL A &none &none &hrm RCTRL H   &hrm RSHFT T &hrm RALT S  &hrm RGUI N
    &kp G      &kp X      &kp J       &kp K       &none &none &kp R         &kp M       &kp F       &kp P
                         &lt NAVFN RET  &mt LSHFT SPACE  &lt SYMNUM BSPC &lt CONFIG ESC
                         >;
@@ -51,7 +64,7 @@
 //                     | SAVE     | TAB      |   |           |           |
                         bindings = <
    &none      &kp GRAVE  &kp BSLH    &kp FSLH    &none &none &kp N1        &kp N2      &kp N3      &kp N4
-   &mt LGUI SQT &mt LALT MINUS &mt LSHFT COMMA &mt LCTRL DOT &none &none &mt RCTRL N5   &mt RSHFT N6 &mt RALT N7  &mt RGUI N8
+   &hrm LGUI SQT &hrm LALT MINUS &hrm LSHFT COMMA &hrm LCTRL DOT &none &none &hrm RCTRL N5   &hrm RSHFT N6 &hrm RALT N7  &hrm RGUI N8
    &kp EQUAL      &kp SEMI      &kp LBKT       &kp RBKT       &none &none &kp N9         &kp N0       &kp Z       &kp Q
                         &save  &mt LSHFT TAB &trans &none
                         >;
@@ -65,7 +78,7 @@
 //                     |          |          |   | DEL       |           |
                         bindings = <
    &none      &none  &none    &none    &none &none &kp F1        &kp F2      &kp F3      &kp F4
-   &mt LGUI LEFT &mt LALT DOWN &mt LSHFT UP &mt LCTRL RIGHT &none &none &mt RCTRL F5   &mt RSHFT F6 &mt RALT F7  &mt RGUI F8
+   &hrm LGUI LEFT &hrm LALT DOWN &hrm LSHFT UP &hrm LCTRL RIGHT &none &none &hrm RCTRL F5   &hrm RSHFT F6 &hrm RALT F7  &hrm RGUI F8
    &kp HOME      &kp PG_DN      &kp PG_UP       &kp END       &none &none &kp F9         &kp F10       &kp F11       &kp F12
                         &none  &trans &kp DEL &caps_word
                         >;
