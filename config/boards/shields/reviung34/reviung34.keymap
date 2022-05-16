@@ -80,7 +80,7 @@
    &none      &none  &none    &none    &none &none &kp F1        &kp F2      &kp F3      &kp F4
    &hrm LGUI LEFT &hrm LALT DOWN &hrm LSHFT UP &hrm LCTRL RIGHT &none &none &hrm RCTRL F5   &hrm RSHFT F6 &hrm RALT F7  &hrm RGUI F8
    &kp HOME      &kp PG_DN      &kp PG_UP       &kp END       &none &none &kp F9         &kp F10       &kp F11       &kp F12
-                        &none  &trans &kp DEL &caps_word
+                        &kp CAPS  &trans &kp DEL &caps_word
                         >;
                 };
                
@@ -92,7 +92,7 @@
 //                                              |     |     |     |     |     |
                         bindings = <
    &rgb_ug RGB_BRI &rgb_ug RGB_SAI &rgb_ug RGB_HUI &rgb_ug RGB_EFF &none &none &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3  
-   &rgb_ug RGB_BRD &rgb_ug RGB_SAD &rgb_ug RGB_HUD &rgb_ug RGB_EFR &none &none &bt BT_SEL 4 &none &none        &none     
+   &rgb_ug RGB_BRD &rgb_ug RGB_SAD &rgb_ug RGB_HUD &rgb_ug RGB_EFR &none &none &bt BT_SEL 4 &bt BT_NXT &bt BT_PRV        &none     
    &none           &none           &none           &rgb_ug RGB_TOG &none &none &bt BT_CLR   &none &out OUT_TOG        &reset   
                                                              &trans      &trans               &trans      &trans
                         >;
