@@ -13,4 +13,4 @@
 #
 ---
 board: ["nice_nano_v2"]
-shield: ["reviung34", "kyria_rev2_left", "kyria_rev2_right"]
+shield: ["reviung34", "kyria_rev2_left", "kyria_rev2_right", "alyx"]
