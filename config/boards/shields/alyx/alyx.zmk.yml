@@ -3,7 +3,7 @@ id: alyx
 name: ALYX
 type: shield
 url: https://example.com
-requires: [pro_micro]
+requires: [pro_micro, i2c]
 features:
   - keys
   - underglow
