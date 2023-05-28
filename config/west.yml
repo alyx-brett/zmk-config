@@ -3,11 +3,11 @@ manifest:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
     - name: touchpanel
-      url-base: https://github.com/FrostKiwi
+      url-base: https://github.com/crides
   projects:
     - name: zmk
       remote: touchpanel
-      revision: mouse-3.2
+      revision: cirque-trackpad
       import: app/west.yml
   self:
     path: config
