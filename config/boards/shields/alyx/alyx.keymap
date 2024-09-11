@@ -74,19 +74,6 @@
         };
     };
 
-    behaviors {
-        // scroll_encoder {
-        //     compatible = "zmk,behavior-sensor-rotate";
-        //     #sensor-binding-cells = <0>;
-        //     bindings = <&kp K_VOL_UP>, <&kp K_VOL_DN>;
-        // };
-        vol_encoder {
-            compatible = "zmk,behavior-sensor-rotate";
-            #sensor-binding-cells = <0>;
-            bindings = <&kp K_VOL_UP>, <&kp K_VOL_DN>;
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
         default_layer {
@@ -117,7 +104,7 @@
    &kp EQUAL &kp SEMI  &kp LBKT  &kp RBKT      &kp N9 &kp N0 &kp Z  &kp Q
                        &save     &mt LSHFT TAB &trans &none
             >;
-            sensor-bindings = <&vol_encoder>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
         navfn_layer {
 
