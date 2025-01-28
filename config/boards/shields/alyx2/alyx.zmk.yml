@@ -5,5 +5,3 @@ type: shield
 url: https://example.com
 requires: [pro_micro]
 features:
-  - keys
-  - encoders
