@@ -13,4 +13,4 @@
 #
 ---
 board: ["nice_nano_v2"]
-shield: ["alyx"]
+shield: ["alyx", "alyx2"]
