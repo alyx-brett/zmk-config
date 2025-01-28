@@ -5,8 +5,9 @@
  */
 
 #include <dt-bindings/zmk/matrix_transform.h>
+#include <dt-bindings/zmk/pointing.h>
 
-&spi1 {
+&pro_micro_spi {
     status = "okay";
     cs-gpios = <&pro_micro 18 GPIO_ACTIVE_LOW>;
 
@@ -24,8 +25,9 @@
 };
 
 / {
-    glidepoint_listener {
+    glidepoint_listener: glidepoint_listener {
         compatible = "zmk,input-listener";
+        status = "okay";
         device = <&glidepoint>;
     };
 
