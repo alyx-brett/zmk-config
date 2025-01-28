@@ -10,6 +10,6 @@ manifest:
       revision: main
     - name: cirque-input-module
       remote: petejohanson
-      revision: main     import: app/west.yml
+      revision: main
   self:
     path: config
