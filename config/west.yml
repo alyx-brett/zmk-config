@@ -8,6 +8,7 @@ manifest:
     - name: zmk
       remote: zmk
       revision: main
+      import: app/west.yml
     - name: cirque-input-module
       remote: petejohanson
       revision: main
