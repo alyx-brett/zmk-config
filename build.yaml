@@ -14,3 +14,4 @@
 ---
 board: ["nice_nano_v2"]
 shield: ["alyx", "alyx2"]
+snippet: zmk-usb-logging
