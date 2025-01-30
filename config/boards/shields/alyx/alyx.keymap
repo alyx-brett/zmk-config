@@ -89,7 +89,7 @@
    &kp G &kp X &kp J &kp K  &kp R   &kp M &kp F &kp P
    &lt NAVFN RET  &mt LSHFT SPACE  &lt SYMNUM BSPC &lt CONFIG ESC
             >;
-            // sensor-bindings = <&scroll_encoder>;
+            sensor-bindings = <&scroll_encoder>;
         };
         symnum_layer {
 
