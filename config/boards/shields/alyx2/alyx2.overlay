@@ -31,6 +31,7 @@
         a-gpios = <&gpio0 22 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&gpio0 24 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         status = "okay";
+        resolution = <1>;
     };
 
     sensors {
