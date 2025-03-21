@@ -30,14 +30,12 @@
         label = "LEFT_ENCODER";
         a-gpios = <&gpio0 22 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&gpio0 24 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        steps = <80>;
         status = "okay";
     };
 
     sensors {
         compatible = "zmk,keymap-sensors";
         sensors = <&left_encoder>;
-        triggers-per-rotation = <20>;
     };
 
     default_transform: keymap_transform_0 {
