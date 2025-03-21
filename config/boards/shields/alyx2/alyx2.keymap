@@ -17,6 +17,15 @@
 #define CONFIG 3
 
 / {    
+
+    behaviors {
+        scroll_encoder: scroll_encoder {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+        };
+    };
+
     macros {
         ZMK_MACRO(save,
             wait-ms = <30>;
@@ -89,7 +98,7 @@
    &kp G &kp X &kp J &kp K  &kp R   &kp M &kp F &kp P
    &lt NAVFN RET  &mt LSHFT SPACE  &lt SYMNUM BSPC &lt CONFIG ESC
             >;
-            // sensor-bindings = <&scroll_encoder>;
+            sensor-bindings = <&scroll_encoder>;
         };
         symnum_layer {
 
