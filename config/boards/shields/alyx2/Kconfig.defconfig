@@ -10,7 +10,7 @@ config ZMK_POINTING
     default y
 
 # Assuming pointing device uses SPI
-config SPI
+config I2C
     default y
 
 endif
