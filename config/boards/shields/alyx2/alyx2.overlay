@@ -7,7 +7,7 @@
     pinctrl-0 = <&i2c0_default>;
     pinctrl-1 = <&i2c0_sleep>;
     pinctrl-names = "default", "sleep";
-    clock-frequency = < 200000 >;
+    clock-frequency = < 100000 >;
     glidepoint: glidepoint@2a {
         compatible = "cirque,pinnacle";
         status = "okay";
