@@ -6,6 +6,7 @@
     glidepoint: glidepoint@0 {
         compatible = "cirque,pinnacle";
         status = "okay";
+        reg = <0>;
         dr-gpios = <&gpio0 31 (GPIO_ACTIVE_HIGH)>;
         sensitivity = "4x";
         sleep;
