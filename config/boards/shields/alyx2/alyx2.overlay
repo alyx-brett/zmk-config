@@ -3,10 +3,10 @@
 
 &i2c0 {
     status = "okay";
-    glidepoint: glidepoint@0 {
+    glidepoint: glidepoint@2a {
         compatible = "cirque,pinnacle";
         status = "okay";
-        reg = <0>;
+        reg = <0x2a>;
         dr-gpios = <&gpio0 31 (GPIO_ACTIVE_HIGH)>;
         sensitivity = "4x";
         sleep;
@@ -31,7 +31,7 @@
         a-gpios = <&gpio0 22 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&gpio0 24 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         status = "okay";
-        resolution = <1>;
+        resolution = <4>;
     };
 
     sensors {
