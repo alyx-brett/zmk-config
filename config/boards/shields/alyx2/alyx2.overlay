@@ -21,6 +21,7 @@
         sensitivity = "4x";
         sleep;
         x-invert;
+        spi-max-frequency = <200000>;
     };
 };
 
