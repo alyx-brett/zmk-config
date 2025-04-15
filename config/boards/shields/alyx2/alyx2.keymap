@@ -14,6 +14,7 @@
 
 &msc {
     trigger-period-ms = <16>;
+    acceleration-exponent = <0>;
 };
 
 / {    
@@ -22,7 +23,7 @@
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
-            tap-ms = <160>;
+            tap-ms = <200>;
         };
     };
 
