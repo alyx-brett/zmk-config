@@ -9,7 +9,7 @@
         status = "okay";
         reg = <0>;
         dr-gpios = <&gpio1 4 (GPIO_ACTIVE_HIGH)>;
-        sensitivity = "2x";
+        sensitivity = "1x";
         sleep;
         x-invert;
         spi-max-frequency = <200000>;
