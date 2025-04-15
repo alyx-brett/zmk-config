@@ -10,6 +10,14 @@
 #define NAVFN 2
 #define CONFIG 3
 
+&msc {
+    x-input-code = <INPUT_REL_HWHEEL>;
+    y-input-code = <INPUT_REL_WHEEL>;
+    time-to-max-speed-ms = <0>;
+    acceleration-exponent = <0>;
+    duration = <0>;
+};
+
 / {    
     behaviors {
         scroll_encoder: scroll_encoder {
@@ -18,6 +26,13 @@
             bindings = <&scrollup>, <&scrolldn>;
             tap-ms = <10>;
         };
+
+        recommended_scroll_encoder: recommended_scroll_encoder {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+            tap-ms = <100>;
+        }
     };
 
     macros {
@@ -132,6 +147,7 @@
    &kp LEFT &kp DOWN  &kp UP    &kp RIGHT &kp F9  &kp F10 &kp F11 &kp F12
                       &trans    &trans    &kp DEL &caps_word
             >;
+            sensor-bindings = <&recommended_scroll_encoder>;
         };
         config_layer {
 
