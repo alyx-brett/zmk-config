@@ -12,6 +12,12 @@
 #define NAVFN 2
 #define CONFIG 3
 
+&msc {
+  acceleration-exponent = <1>;
+  time-to-max-speed-ms = <100>;
+  delay-ms = <0>;
+};
+
 / {    
 
     behaviors {
@@ -24,11 +30,6 @@
 
     };
 
-&msc {
-  acceleration-exponent = <1>;
-  time-to-max-speed-ms = <100>;
-  delay-ms = <0>;
-};
 
     macros {
         ZMK_MACRO(save,
