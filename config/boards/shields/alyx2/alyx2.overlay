@@ -21,7 +21,7 @@
 
 / {
     glidepoint_listener: glidepoint_listener {
-        input-processors = <&zip_xy_scaler 2 1>;
+        input-processors = <&zip_xy_scaler 5 2>;
         compatible = "zmk,input-listener";
         status = "okay";
         device = <&glidepoint>;
@@ -44,7 +44,7 @@
     sensors {
         compatible = "zmk,keymap-sensors";
         sensors = <&left_encoder>;
-        triggers-per-rotation = <96>;
+        triggers-per-rotation = <48>;
     };
 
     default_transform: keymap_transform_0 {
