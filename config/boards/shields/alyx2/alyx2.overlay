@@ -39,7 +39,7 @@
         b-gpios = <&gpio0 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         a-gpios = <&gpio0 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         status = "okay";
-        steps = <24>;
+        steps = <96>;
     };
 
     sensors {
