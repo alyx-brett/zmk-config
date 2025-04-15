@@ -18,7 +18,7 @@
         scroll_encoder: scroll_encoder {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
-            bindings = <&msc MOVE_Y(-5)>, <&msc MOVE_Y(5)>;
+            bindings = <&scrollup>, <&scrolldn>;
             tap-ms = <100>;
         };
     };
@@ -28,7 +28,16 @@
             wait-ms = <30>;
             tap-ms = <40>;
             bindings =  <&macro_tap &kp ESC &kp COLON &kp W &kp RET>;
-        )
+        ),
+        ZMK_MACRO(scrollup,
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings = <&macro_tap &kp SLCK &kp UP &kp SLCK>;
+),ZMK_MACRO(scrolldn,
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings = <&macro_tap &kp SLCK &kp DOWN &kp SLCK>;
+)
     };
 
     combos {
@@ -95,7 +104,7 @@
    &kp G &kp X &kp J &kp K  &kp R   &kp M &kp F &kp P
    &lt NAVFN RET  &mt LSHFT SPACE  &lt SYMNUM BSPC &lt CONFIG ESC
             >;
-            sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
+            sensor-bindings = <&scroll_encoder>;
         };
         symnum_layer {
 
