@@ -14,8 +14,8 @@
 
 &msc {
   acceleration-exponent = <0>;
-  time-to-max-speed-ms = <20>;
-  delay-ms = <10>;
+  time-to-max-speed-ms = <0>;
+  delay-ms = <0>;
 };
 
 / {    
@@ -24,7 +24,7 @@
         scroll_encoder: scroll_encoder {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
-            bindings = <INPUT_REL_Y(5)>, <INPUT_REL_X(5)>;
+            bindings = <&msc MOVE_Y(-5)>, <&msc MOVE_Y(5)>;
             tap-ms = <40>;
         };
     };
