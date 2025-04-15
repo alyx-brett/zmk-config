@@ -13,7 +13,7 @@
 #define CONFIG 3
 
 &msc {
-  acceleration-exponent = <0>;
+  acceleration-exponent = <1>;
   time-to-max-speed-ms = <10>;
   delay-ms = <0>;
 };
