@@ -9,15 +9,19 @@
         status = "okay";
         reg = <0>;
         dr-gpios = <&gpio1 4 (GPIO_ACTIVE_HIGH)>;
-        sensitivity = "1x";
+        sensitivity = "2x";
         sleep;
         x-invert;
         spi-max-frequency = <200000>;
+        x-axis-z-min = <10>;
+        y-axis-z-min = <10>;
+
     };
 };
 
 / {
     glidepoint_listener: glidepoint_listener {
+        input-processors = <&zip_xy_scaler 2 1>;
         compatible = "zmk,input-listener";
         status = "okay";
         device = <&glidepoint>;
