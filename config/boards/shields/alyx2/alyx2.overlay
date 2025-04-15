@@ -1,5 +1,6 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 #include <dt-bindings/zmk/pointing.h>
+#include <input/processors.dtsi>
 
 &pro_micro_spi {
     status = "okay";
