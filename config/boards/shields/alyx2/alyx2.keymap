@@ -13,7 +13,7 @@
 #define CONFIG 3
 
 &msc {
-    trigger-period-ms = <32>;
+    trigger-period-ms = <16>;
 };
 
 / {    
@@ -22,7 +22,7 @@
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
-            tap-ms = <150>;
+            tap-ms = <160>;
         };
     };
 
