@@ -10,25 +10,14 @@
 #define NAVFN 2
 #define CONFIG 3
 
-&msc {
-    time-to-max-speed-ms = <0>;
-    acceleration-exponent = <0>;
-};
-
 / {    
     behaviors {
         scroll_encoder: scroll_encoder {
-            compatible = "zmk,behavior-sensor-rotate";
-            #sensor-binding-cells = <0>;
-            bindings = <&scrollup>, <&scrolldn>;
-            tap-ms = <10>;
-        };
-
-        recommended_scroll_encoder: recommended_scroll_encoder {
-            compatible = "zmk,behavior-sensor-rotate";
+            comp
+atible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
-            tap-ms = <200>;
+            tap-ms = <150>;
         };
     };
 
@@ -144,7 +133,6 @@
    &kp LEFT &kp DOWN  &kp UP    &kp RIGHT &kp F9  &kp F10 &kp F11 &kp F12
                       &trans    &trans    &kp DEL &caps_word
             >;
-            sensor-bindings = <&recommended_scroll_encoder>;
         };
         config_layer {
 
