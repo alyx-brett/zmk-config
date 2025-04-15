@@ -16,7 +16,6 @@
         spi-max-frequency = <200000>;
         x-axis-z-min = <10>;
         y-axis-z-min = <10>;
-
     };
 };
 
@@ -45,7 +44,7 @@
     sensors {
         compatible = "zmk,keymap-sensors";
         sensors = <&left_encoder>;
-        triggers-per-rotation = <24>;
+        triggers-per-rotation = <96>;
     };
 
     default_transform: keymap_transform_0 {
