@@ -11,7 +11,7 @@
 #define CONFIG 3
 
 &msc {
-    trigger-duration-ms = <32>;
+    trigger-period-ms = <32>;
 };
 
 / {    
