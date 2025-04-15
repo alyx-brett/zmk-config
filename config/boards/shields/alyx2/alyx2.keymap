@@ -27,17 +27,17 @@
         ZMK_MACRO(save,
             wait-ms = <30>;
             tap-ms = <40>;
-            bindings =  <&macro_tap &kp ESC &kp COLON &kp W &kp RET>;
+            bindings =  <&macro_tap &kp ESC &kp COLON &kp W &kp RET>
         )
         ZMK_MACRO(scrollup,
             wait-ms = <10>;
             tap-ms = <10>;
-            bindings = <&macro_tap &kp SLCK &kp UP &kp SLCK>;
+            bindings = <&macro_tap &kp SLCK &kp UP &kp SLCK>
 )
 ZMK_MACRO(scrolldn,
             wait-ms = <10>;
             tap-ms = <10>;
-            bindings = <&macro_tap &kp SLCK &kp DOWN &kp SLCK>;
+            bindings = <&macro_tap &kp SLCK &kp DOWN &kp SLCK>
 )
     };
 
