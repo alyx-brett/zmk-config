@@ -22,12 +22,13 @@
             tap-ms = <100>;
         };
 
+    };
+
 &msc {
   acceleration-exponent = <1>;
   time-to-max-speed-ms = <100>;
   delay-ms = <0>;
 };
-    };
 
     macros {
         ZMK_MACRO(save,
