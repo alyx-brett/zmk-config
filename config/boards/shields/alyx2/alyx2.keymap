@@ -19,7 +19,7 @@
         scroll_encoder: scroll_encoder {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
-            bindings = <&msc MOVE_Y(-60)>, <&msc MOVE_Y(60)>;
+            bindings = <&msc MOVE_Y(72)>, <&msc MOVE_Y(-72)>;
             tap-ms = <20>;
         };
     };
@@ -121,7 +121,7 @@
    &kp EQUAL &kp SEMI  &kp LBKT  &kp RBKT      &kp N9 &kp N0 &kp Z  &kp Q
                        &save     &mt LSHFT TAB &trans &none
             >;
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
         navfn_layer {
 
