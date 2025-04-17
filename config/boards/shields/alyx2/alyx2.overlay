@@ -13,8 +13,8 @@
         sensitivity = "4x";
         x-invert;
         spi-max-frequency = <400000>;
-        x-axis-z-min = <10>;
-        y-axis-z-min = <10>;
+        x-axis-z-min = <8>;
+        y-axis-z-min = <8>;
     };
 };
 
