@@ -3,8 +3,6 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/mouse.h>
-
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 75
 #include <dt-bindings/zmk/pointing.h>
 
 #define DEFAULT 0
@@ -21,7 +19,7 @@
         scroll_encoder: scroll_encoder {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
-            bindings = <&msc MOVE_Y(-125)>, <&msc MOVE_Y(125)>;
+            bindings = <&msc MOVE_Y(-75)>, <&msc MOVE_Y(75)>;
             tap-ms = <20>;
         };
     };
