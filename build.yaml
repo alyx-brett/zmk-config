@@ -15,11 +15,6 @@
 include:
   # - board: nice_nano@2.0.0//zmk
   #   shield: settings_reset
-
-  - board: nice_nano
-    shield: corne_left
-    snippet: zmk-usb-logging
-    
   #- board: nice_nano@2.0.0//zmk
   #  shield: corne36_left
     # snippet: studio-rpc-usb-uart
@@ -33,6 +28,8 @@ include:
   #  shield: corne36_tball2
   - board: nice_nano@2.0.0//zmk
     shield: corne36_tpoint0
+    snippet: zmk-usb-logging
+
   # - board: xiao_ble//zmk
   #   shield: corne36_tpad0
   #- board: xiao_ble//zmk
