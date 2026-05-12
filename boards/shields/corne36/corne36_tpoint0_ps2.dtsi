@@ -5,7 +5,7 @@
  */
 #define MOUSE_PS2_PIN_SCL_PRO_MICRO <&pro_micro 16 (GPIO_ACTIVE_HIGH | GPIO_OPEN_DRAIN)>
 #define MOUSE_PS2_PIN_SDA_PRO_MICRO <&pro_micro 10 (GPIO_ACTIVE_HIGH | GPIO_OPEN_DRAIN)>
-#define MOUSE_PS2_PIN_RST_PRO_MICRO <&pro_micro 9 GPIO_ACTIVE_HIGH>
+#define MOUSE_PS2_PIN_RST_PRO_MICRO <&gpio1 6 GPIO_ACTIVE_HIGH>
 
 &gpiote { interrupts = < 6 0 >; };
 &clock { interrupts = < 0 3 >; };
