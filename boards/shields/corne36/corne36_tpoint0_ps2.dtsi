@@ -60,7 +60,7 @@
 				status = "disabled";
         compatible = "zmk,input-mouse-ps2";
 ps2-device = <&gpio_ps2>;
-        rst-gpios = <&gpio1 6 GPIO_ACTIVE_HIGH>;
+        rst-gpio = <&gpio1 6 GPIO_ACTIVE_HIGH>;
     };
 };
 
