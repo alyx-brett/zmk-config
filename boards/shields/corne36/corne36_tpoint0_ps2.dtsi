@@ -69,6 +69,9 @@
         status = "okay";
         scl-gpios = MOUSE_PS2_PIN_SCL_PRO_MICRO;
         sda-gpios = MOUSE_PS2_PIN_SDA_PRO_MICRO;
+
+inhibit-delay-ms = <15>; 
+    resend-timeout-ms = <100>;
     };
 
     tpoint0: tpoint0 {
