@@ -57,10 +57,10 @@
     };
 
     tpoint0: tpoint0 {
-				status = "disabled";
+				status = "okay";
         compatible = "zmk,input-mouse-ps2";
 ps2-device = <&gpio_ps2>;
-        rst-gpio = <&gpio1 6 GPIO_ACTIVE_HIGH>;
+        rst-gpios = <&gpio1 6 GPIO_ACTIVE_HIGH>;
     };
 };
 
